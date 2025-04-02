@@ -1,4 +1,4 @@
-using MongoDB.Bson.Serialization.Atributes;
+using MongoDB.Bson.Serialization.Attributes;
 
 public class Inmueble {
     [BsonId]
@@ -13,7 +13,7 @@ public class Inmueble {
     public string NombreAgente { get; set;} = string.Empty;
     [BsonElement("baños")]
     public int Banios { get; set; }
-    [BsonElemet("metros_terreno")]
+    [BsonElement("metros_terreno")]
     public int MetrosTerreno { get; set; }
     [BsonElement("metros_construccion")]
     public int MetrosConstruccion { get; set; }
